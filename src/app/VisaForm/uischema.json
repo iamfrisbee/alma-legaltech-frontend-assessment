@@ -1,0 +1,77 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "SectionHeader",
+      "options": {
+        "icon": "fa-circle-info",
+        "title": "Want to understand your visa options?",
+        "description": "Submit the form below and our team of experienced attorneys will review your information and send a preliminary assessment of your case based on your goals"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/firstName",
+      "label": "First Name"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/lastName",
+      "label": "Last Name"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/email",
+      "label": "Email"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/country",
+      "label": "Country"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/linkedIn",
+      "label": "LinkedIn"
+    },
+    {
+      "type": "FileUpload",
+      "scope": "#/properties/cv",
+      "label": "Resume/CV"
+    },
+    {
+      "type": "SectionHeader",
+      "options": {
+        "icon": "fa-dice-five",
+        "title": "Visa categories of interest?"
+      }
+    },
+    {
+      "type": "ColumnCheckbox",
+      "scope": "#/properties/visaType",
+      "label": false
+    },
+    {
+      "type": "SectionHeader",
+      "options": {
+        "icon": "fa-heart",
+        "title": "How can we help you?"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/message",
+      "options": {
+        "multi": true
+      }
+    }
+  ],
+  "required": [
+    "firstName",
+    "lastName",
+    "email",
+    "country",
+    "visaType",
+    "message"
+  ]
+}
